@@ -41,7 +41,8 @@ class ProgressChecker(threading.Thread):
 
 def get_bad_file_hash():
     global _cur_bad_file_sequence
-    fake_hash = 'ERR_{}'.format(_cur_bad_file_sequence)
+    # fake_hash = 'ERR_{}'.format(_cur_bad_file_sequence)
+    fake_hash = 'ERR'
     _cur_bad_file_sequence += 1
     return fake_hash
 
